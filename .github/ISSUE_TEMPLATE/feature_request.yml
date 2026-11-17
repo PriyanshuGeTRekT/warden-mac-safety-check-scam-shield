@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest an idea or an improvement for Warden.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Please search the existing issues and the [roadmap](https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield#roadmap) first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      placeholder: "I often want to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you use today
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Scam shield (alerts)
+        - Safety Check findings
+        - Remote-control tool recognition
+        - Command line (warden)
+        - Something new
+    validations:
+      required: true

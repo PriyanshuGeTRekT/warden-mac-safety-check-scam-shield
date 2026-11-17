@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warden – Mac Safety Check &amp; Remote-Access Scam Shield (Free)</title>
+<meta name="description" content="Free, open-source Safety Check for Mac: finds AnyDesk, TeamViewer and other remote-control apps, checks sharing, proxies, startup items and permissions, and warns you the moment a scam tool opens.">
+<meta name="keywords" content="mac safety check, anydesk scam, teamviewer scam, tech support scam protection, is someone remotely accessing my mac">
+<link rel="canonical" href="https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/">
+<meta name="author" content="Priyanshu Yadav">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="256x256" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Warden">
+<meta property="og:url" content="https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/">
+<meta property="og:title" content="Warden – Safety Check for your Mac">
+<meta property="og:description" content="Who can see or control your Mac? Warden checks in plain English, and puts up a stop sign the moment a remote-control app like AnyDesk or TeamViewer opens. Free and open source.">
+<meta property="og:image" content="https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Warden app icon and a screenshot of the app.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Warden – Safety Check for your Mac">
+<meta name="twitter:description" content="Who can see or control your Mac? Warden checks in plain English, and puts up a stop sign the moment a remote-control app like AnyDesk or TeamViewer opens. Free and open source.">
+<meta name="twitter:image" content="https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/og-image.png">
+<meta name="twitter:image:alt" content="Warden app icon and a screenshot of the app.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Warden",
+  "description": "Who can see or control your Mac? Warden checks in plain English, and puts up a stop sign the moment a remote-control app like AnyDesk or TeamViewer opens. Free and open source.",
+  "url": "https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/",
+  "image": "https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/icon.png",
+  "operatingSystem": "macOS 14 or later",
+  "applicationCategory": "SecurityApplication",
+  "softwareVersion": "1.0.0",
+  "softwareRequirements": "Mac with Apple silicon",
+  "downloadUrl": "https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases/latest/download/Warden.zip",
+  "installUrl": "https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases/latest/download/Warden.zip",
+  "license": "https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/blob/main/LICENSE",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Priyanshu Yadav",
+    "url": "https://github.com/PriyanshuGeTRekT",
+    "sameAs": [
+      "https://github.com/PriyanshuGeTRekT"
+    ]
+  },
+  "screenshot": [
+    "https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/screenshots/stop-sign.png",
+    "https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/screenshots/calm.png",
+    "https://priyanshugetrekt.github.io/warden-mac-safety-check-scam-shield/screenshots/report.png"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if someone is remotely accessing my Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run Warden. Its Safety Check looks for remote-control apps that are installed or open, screen sharing and remote login, extra administrator accounts and sign-ins from other computers. Its shield warns you the moment a remote-control app opens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AnyDesk or TeamViewer on my Mac dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not by itself: companies use them for IT support. But they are exactly what tech-support scammers ask people to install. If you didn’t install one yourself, or someone on the phone told you to, remove it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Someone phoned me and asked me to install a program. What do I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hang up. Real support from Apple, your bank or your internet provider never asks you to install a remote-control program or to read out a code, password or card number. Call someone you trust instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a Safety Check for Mac like on iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not built in. Warden is a free Safety Check for the Mac: who can see or control it, explained in plain English."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Warden need my password or send data anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Warden only reads, needs no administrator password, and makes no network requests at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does macOS say Warden cannot be opened?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Warden is not notarized by Apple, so macOS blocks the first launch. Open System Settings › Privacy & Security, scroll down and click Open Anyway next to Warden. You only need to do this once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Warden antivirus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It looks for remote-control tools and the common signs of tampering. It doesn’t scan files for malware."
+      }
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --bg-alt: #f5f5f7;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --text-2: #5e5e63;
+  --line: #d2d2d7;
+  --link: #0066cc;
+  --btn: #0071e3;
+  --btn-hover: #0077ed;
+  --btn-text: #ffffff;
+  --code-bg: #1d1d1f;
+  --code-text: #f5f5f7;
+  --shot-shadow: 0 30px 60px -20px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.06);
+  --focus: #0071e3;
+  --nav-bg: rgba(255,255,255,.78);
+  --green: #1d7a35; --blue: #0060c0; --orange: #b33000; --purple: #7d3c9e;
+  --pink: #c00d3f; --teal: #00668f; --red: #c4000f; --indigo: #3634a3;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-alt: #161617;
+    --card: #1d1d1f;
+    --text: #f5f5f7;
+    --text-2: #a1a1a6;
+    --line: #424245;
+    --link: #2997ff;
+    --code-bg: #1d1d1f;
+    --shot-shadow: 0 30px 60px -20px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.12);
+    --focus: #2997ff;
+    --nav-bg: rgba(22,22,23,.78);
+    --green: #30d158; --blue: #409cff; --orange: #ff9f0a; --purple: #da8fff;
+    --pink: #ff6482; --teal: #5de6ff; --red: #ff6961; --indigo: #a5a3ff;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 64px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.015em; }
+p { margin: 0; }
+code, kbd { font-family: var(--mono); font-size: .92em; }
+kbd { font-family: var(--font); }
+
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--btn); color: #fff; padding: 10px 16px; border-radius: 10px; }
+.skip:focus { top: 12px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* Navigation */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 52px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 8px; color: var(--text); font-weight: 600; font-size: 17px; }
+.brand:hover { text-decoration: none; }
+.brand img { width: 26px; height: 26px; }
+.site-header ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; }
+.site-header ul a { color: var(--text); opacity: .85; }
+.site-header ul a:hover { opacity: 1; text-decoration: none; }
+.site-header .nav-cta a { color: var(--link); opacity: 1; }
+
+/* Hero */
+.hero { text-align: center; padding: 72px 0 40px; }
+.hero-icon { width: 128px; height: 128px; margin: 0 auto 20px; }
+.hero h1 { display: flex; flex-direction: column; gap: 6px; }
+.hero .name { font-size: 28px; font-weight: 600; color: var(--text-2); letter-spacing: -0.01em; }
+.hero .headline { font-size: clamp(40px, 7vw, 76px); line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; }
+.hero .sub { font-size: clamp(19px, 2.4vw, 24px); line-height: 1.35; color: var(--text-2); max-width: 760px; margin: 22px auto 0; letter-spacing: -0.01em; }
+.actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px 28px; margin-top: 32px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--btn); color: var(--btn-text);
+  font-size: 17px; font-weight: 500; padding: 13px 26px; border-radius: 980px;
+  min-height: 48px;
+}
+.btn:hover { background: var(--btn-hover); text-decoration: none; }
+.btn svg { width: 18px; height: 18px; fill: currentColor; }
+.link-arrow::after { content: " ›"; }
+.meta { margin-top: 16px; font-size: 14px; color: var(--text-2); }
+.brew { max-width: 940px; margin: 36px auto 0; text-align: left; }
+.brew-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 14px; color: var(--text-2); }
+.copy {
+  font: inherit; font-size: 13px; color: var(--link); background: transparent;
+  border: 1px solid var(--line); border-radius: 980px; padding: 4px 12px; cursor: pointer; min-height: 30px;
+}
+.copy:hover { border-color: var(--link); }
+pre {
+  margin: 0; padding: 18px 20px; border-radius: 14px; overflow-x: auto;
+  background: var(--code-bg); color: var(--code-text);
+  font-family: var(--mono); font-size: 14px; line-height: 1.6; letter-spacing: 0;
+}
+@media (prefers-color-scheme: dark) { pre { border: 1px solid #333336; } }
+pre code { font-size: inherit; }
+pre .prompt { color: #8e8e93; user-select: none; -webkit-user-select: none; }
+.hero-shot { margin: 56px auto 0; width: 400px; max-width: 100%; }
+
+.shot { border-radius: 22px; box-shadow: var(--shot-shadow); background: #1e1e1e; }
+.shot-wide { border-radius: 16px; }
+
+/* Highlights */
+.highlights { padding: 40px 0 88px; }
+.highlights ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.highlights li { background: var(--bg-alt); border-radius: 20px; padding: 26px 24px; }
+.highlights h2 { font-size: 21px; margin-bottom: 6px; }
+.highlights p { font-size: 15px; color: var(--text-2); }
+
+/* Feature sections */
+.section { padding: 96px 0; }
+.alt { background: var(--bg-alt); }
+.section-intro { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+.section-title { font-size: clamp(32px, 5vw, 56px); line-height: 1.07; font-weight: 700; letter-spacing: -0.028em; }
+.section-lede { font-size: clamp(19px, 2.2vw, 21px); color: var(--text-2); margin-top: 16px; }
+.feature { display: grid; grid-template-columns: 1fr 400px; gap: 72px; align-items: center; }
+.feature.flip { grid-template-columns: 400px 1fr; }
+.feature.flip .feature-text { order: 2; }
+.feature.wide { grid-template-columns: 1fr 1.3fr; }
+.eyebrow { font-size: 19px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.01em; }
+.feature h2 { font-size: clamp(30px, 4.2vw, 48px); line-height: 1.08; font-weight: 700; letter-spacing: -0.026em; }
+.feature .lede { font-size: 19px; color: var(--text-2); margin-top: 18px; line-height: 1.45; }
+.feature ul { margin: 24px 0 0; padding: 0; list-style: none; }
+.feature li { position: relative; padding: 10px 0 10px 28px; border-top: 1px solid var(--line); font-size: 17px; }
+.feature li:last-child { border-bottom: 1px solid var(--line); }
+.feature li::before { content: ""; position: absolute; left: 4px; top: 19px; width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: .35; }
+.c-green { color: var(--green); } .c-blue { color: var(--blue); } .c-orange { color: var(--orange); }
+.c-purple { color: var(--purple); } .c-pink { color: var(--pink); } .c-teal { color: var(--teal); }
+.c-red { color: var(--red); } .c-indigo { color: var(--indigo); }
+
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 72px; }
+.gallery figure { margin: 0; }
+.gallery figcaption { margin-top: 14px; font-size: 15px; color: var(--text-2); }
+.gallery figcaption strong { color: var(--text); font-weight: 600; }
+
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { background: var(--card); border-radius: 28px; padding: 44px 40px 0; overflow: hidden; display: flex; flex-direction: column; }
+.card h2 { font-size: clamp(26px, 3.2vw, 34px); line-height: 1.12; font-weight: 700; letter-spacing: -0.022em; }
+.card p:not(.eyebrow) { color: var(--text-2); margin-top: 12px; }
+.card img { width: 320px; margin: 36px auto -60px; }
+.card-shot { margin-top: auto; }
+
+/* Replaces table */
+.table-wrap { overflow-x: auto; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+table { width: 100%; border-collapse: collapse; font-size: 16px; }
+caption { text-align: left; }
+th, td { text-align: left; padding: 15px 22px; vertical-align: top; }
+thead th { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-2); font-weight: 600; border-bottom: 1px solid var(--line); }
+tbody tr + tr th, tbody tr + tr td { border-top: 1px solid var(--line); }
+tbody th { font-weight: 400; color: var(--text-2); }
+tbody th strong { color: var(--text); font-weight: 600; display: block; }
+.note { text-align: center; font-size: 15px; color: var(--text-2); margin-top: 20px; }
+
+/* Install */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; counter-reset: step; }
+.steps > li { background: var(--bg-alt); border-radius: 24px; padding: 34px 30px; counter-increment: step; min-width: 0; }
+.steps > li::before {
+  content: counter(step); display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 50%; background: var(--btn); color: #fff; font-weight: 600; margin-bottom: 18px;
+}
+.steps h3 { font-size: 22px; margin-bottom: 10px; letter-spacing: -0.016em; }
+.steps p { color: var(--text-2); font-size: 16px; }
+.steps p + p { margin-top: 10px; }
+.steps pre { margin-top: 14px; font-size: 12.5px; padding: 14px 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.path { color: var(--text); font-weight: 500; }
+.install-foot { text-align: center; margin-top: 32px; color: var(--text-2); }
+
+/* FAQ */
+.faq { max-width: 820px; margin: 0 auto; }
+.faq-item { padding: 26px 0; border-top: 1px solid var(--line); }
+.faq-item:last-child { border-bottom: 1px solid var(--line); }
+.faq h3 { font-size: 21px; letter-spacing: -0.016em; margin-bottom: 8px; }
+.faq p { color: var(--text-2); }
+
+/* Final call to action */
+.cta { text-align: center; padding: 110px 0; }
+.cta img { width: 96px; height: 96px; margin: 0 auto 22px; }
+.cta .actions { margin-top: 28px; }
+
+/* Footer */
+.site-footer { background: var(--bg-alt); color: var(--text-2); font-size: 13px; padding: 32px 0 44px; border-top: 1px solid var(--line); }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.site-footer a { color: var(--text); }
+.site-footer small { font-size: 13px; }
+
+@media (max-width: 960px) {
+  .highlights ul { grid-template-columns: repeat(2, 1fr); }
+  .feature, .feature.flip, .feature.wide { grid-template-columns: 1fr; gap: 48px; }
+  .feature.flip .feature-text { order: 0; }
+  .feature-media { justify-self: center; width: 100%; max-width: 400px; }
+  .feature.wide .feature-media { max-width: 640px; }
+  .steps { grid-template-columns: minmax(0, 1fr); max-width: 640px; margin: 0 auto; }
+}
+@media (max-width: 734px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 20px; }
+  .site-header .hide-sm { display: none; }
+  .site-header ul { gap: 18px; }
+  .hero { padding-top: 48px; }
+  .hero-icon { width: 104px; height: 104px; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; }
+  .hero .name { font-size: 22px; }
+  .highlights { padding-bottom: 64px; }
+  .highlights ul { grid-template-columns: 1fr; gap: 12px; }
+  .section { padding: 72px 0; }
+  .section-intro { margin-bottom: 40px; }
+  .gallery { grid-template-columns: 1fr; gap: 28px; margin-top: 48px; }
+  .duo { grid-template-columns: 1fr; }
+  .card { padding: 34px 26px 0; }
+  .card img { width: 260px; }
+  th, td { padding: 12px 14px; }
+  table { font-size: 15px; }
+  .cta { padding: 80px 0; }
+}
+@media (forced-colors: active) {
+  .btn, .copy { border: 2px solid ButtonText; }
+}
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Warden, back to top">
+      <img src="icon.png" width="26" height="26" alt="">
+      <span>Warden</span>
+    </a>
+    <ul>
+      <li class="hide-sm"><a href="#features">Features</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li class="nav-cta"><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield">GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <img class="hero-icon" src="icon.png" width="128" height="128" alt="Warden app icon: a white shield with a tick on a teal rounded square">
+      <h1 id="hero-title">
+        <span class="name">Warden</span>
+        <span class="headline">Safety Check for your Mac.</span>
+      </h1>
+      <p class="sub">Who can see or control this Mac? Warden answers in plain English, and puts up a stop sign the moment a remote-control app like AnyDesk or TeamViewer opens, the way tech-support scams begin.</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases/latest/download/Warden.zip">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3zM5 19h14v2H5z"/></svg>
+          Download for Mac
+        </a>
+        <a class="link-arrow" href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield">View the source on GitHub</a>
+      </div>
+      <p class="meta">Free · Version 1.0.0 · macOS 14 or later · Apple silicon</p>
+
+      <div class="brew">
+        <div class="brew-head">
+          <span id="brew-label">Or install with Homebrew</span>
+          <button class="copy" type="button" data-copy="brew-cmd" hidden>Copy</button>
+        </div>
+        <pre tabindex="0" aria-labelledby="brew-label"><code id="brew-cmd">brew tap priyanshugetrekt/warden https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield
+brew install --cask priyanshugetrekt/warden/warden</code></pre>
+        <p class="visually-hidden" role="status" aria-live="polite" id="copy-status"></p>
+      </div>
+
+      <img class="hero-shot shot" src="demo.gif" style="width:640px" fetchpriority="high" alt="Animated demo of Warden: a remote-control app opens and Warden&#x27;s stop sign appears, then closes it.">
+    </div>
+  </section>
+
+  <section class="highlights" aria-label="Highlights">
+    <div class="wrap">
+      <ul>
+        <li><h2>Plain English</h2><p>Every result says what it means and what to do, with the right setting one click away.</p></li>
+        <li><h2>Read-only</h2><p>Warden only looks. It changes nothing and needs no administrator password.</p></li>
+        <li><h2>Private</h2><p>No network requests, no account, no telemetry. Nothing leaves your Mac.</p></li>
+        <li><h2>Free</h2><p>Open source under the MIT License. No subscription, no upsell.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section alt" id="features" aria-labelledby="s0-title">
+    <div class="wrap feature">
+      <div class="feature-text">
+        <p class="eyebrow c-red">Scam shield</p>
+        <h2 id="s0-title">A stop sign the moment a scam tool opens.</h2>
+        <p class="lede">Tech-support scams start with “install this program so I can fix your computer”. When a remote-control app opens, Warden’s warning floats above every window, with Close it now and Call your helper.</p>
+        <ul>
+          <li>Recognises about 20 tools: AnyDesk, TeamViewer, RustDesk, ScreenConnect, Splashtop and more.</li>
+          <li>Escalates when the tool starts streaming your screen.</li>
+          <li>“I use this one” for tools you really use.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <img class="shot" src="screenshots/stop-sign.png" loading="lazy" decoding="async" alt="Warden stop sign: Someone may be controlling your Mac, with Close AnyDesk now and Call Anna buttons.">
+      </div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="s1-title">
+    <div class="wrap feature flip">
+      <div class="feature-text">
+        <p class="eyebrow c-teal">Safety Check</p>
+        <h2 id="s1-title">Who can see or control this Mac?</h2>
+        <p class="lede">One screen covers remote-control apps, screen and file sharing, remote login, device management, FileVault, Gatekeeper, the firewall, proxies, startup items, permissions and extra admin accounts.</p>
+        <ul>
+          <li>Honest severities: needs attention now, worth a look, good to know.</li>
+          <li>The right System Settings pane one click away.</li>
+          <li>Says plainly what it couldn't check, and why.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <img class="shot" src="screenshots/calm.png" loading="lazy" decoding="async" alt="Warden Safety Check with findings grouped as worth a look, good to know and looks good.">
+      </div>
+    </div>
+  </section>
+  <section class="section alt" aria-labelledby="s2-title">
+    <div class="wrap feature">
+      <div class="feature-text">
+        <p class="eyebrow c-orange">Plain English</p>
+        <h2 id="s2-title">Says what it found, and what to do.</h2>
+        <p class="lede">Each finding explains what it means for you, shows the evidence, and offers the fix. Copy a summary to send to whoever helps you with your computer.</p>
+        <ul>
+          <li>Evidence: app names, install dates, ports, data rates.</li>
+          <li>Close a remote-control app right from the finding.</li>
+          <li>A summary in plain text for your family.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <img class="shot" src="screenshots/report.png" loading="lazy" decoding="async" alt="Warden report: AnyDesk looks connected to someone right now, sending about 450 KB/s, with Close AnyDesk now.">
+      </div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="s3-title">
+    <div class="wrap feature flip">
+      <div class="feature-text">
+        <p class="eyebrow c-purple">Command line</p>
+        <h2 id="s3-title">In Terminal too.</h2>
+        <p class="lede"><code>warden audit</code> prints the same Safety Check, with an exit code for scripts and <code>--json</code> output. <code>warden watch</code> runs the shield in a terminal.</p>
+        <ul>
+          <li><code>warden tools</code>, <code>close</code>, <code>trust</code>, <code>summary</code>.</li>
+          <li>Exit code 0 fine, 1 worth a look, 2 needs attention now.</li>
+          <li>Useful for IT people checking a family member’s Mac.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <pre tabindex="0" aria-label="In Terminal too."><code>$ warden audit
+Warden — Safety Check
+2 things are worth a look
+ ▲ A remote-control program was installed recently
+     • AnyDesk — installed 2 days ago
+ ▲ Your internet traffic goes through a proxy
+ ✓ Your files are encrypted (FileVault is on)
+ ✓ Nobody else manages this Mac</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section class="section" id="install" aria-labelledby="install-title">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 class="section-title" id="install-title">Up and running in a minute.</h2>
+        <p class="section-lede">Requires macOS 14 or later on a Mac with Apple silicon.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Download</h3>
+          <p><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases/latest/download/Warden.zip">Download Warden.zip</a>, unzip it and drag <span class="path">Warden.app</span> into your Applications folder.</p>
+          <p>Or install it with Homebrew:</p>
+          <pre tabindex="0" aria-label="Homebrew install command"><code>brew install --cask priyanshugetrekt/warden/warden</code></pre>
+          <p>Run the <code>brew tap</code> command shown at the top of the page first.</p>
+        </li>
+        <li>
+          <h3>Open Anyway</h3>
+          <p>Warden is not notarized by Apple, so macOS blocks the first launch. Open <span class="path">System Settings › Privacy &amp; Security</span>, scroll down and click <span class="path">Open Anyway</span> next to Warden.</p>
+          <p>You only need to do this once.</p>
+        </li>
+        <li>
+          <h3>Get started</h3>
+          <p>To include which apps may record the screen or control the Mac in the Safety
+    Check, allow Warden in System Settings › Privacy &amp; Security › Full Disk Access.
+    Everything else works without any permission.</p>
+        </li>
+      </ol>
+      <p class="install-foot">Prefer to build it yourself? <a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield#installation">Build from source</a> with just the Command Line Tools.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section alt" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 class="section-title" id="faq-title">Questions and answers.</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>How do I know if someone is remotely accessing my Mac?</h3>
+          <p>Run Warden. Its Safety Check looks for remote-control apps that are installed or open, screen sharing and remote login, extra administrator accounts and sign-ins from other computers. Its shield warns you the moment a remote-control app opens.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is AnyDesk or TeamViewer on my Mac dangerous?</h3>
+          <p>Not by itself: companies use them for IT support. But they are exactly what tech-support scammers ask people to install. If you didn’t install one yourself, or someone on the phone told you to, remove it.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Someone phoned me and asked me to install a program. What do I do?</h3>
+          <p>Hang up. Real support from Apple, your bank or your internet provider never asks you to install a remote-control program or to read out a code, password or card number. Call someone you trust instead.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a Safety Check for Mac like on iPhone?</h3>
+          <p>Not built in. Warden is a free Safety Check for the Mac: who can see or control it, explained in plain English.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does Warden need my password or send data anywhere?</h3>
+          <p>No. Warden only reads, needs no administrator password, and makes no network requests at all.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why does macOS say Warden cannot be opened?</h3>
+          <p>Warden is not notarized by Apple, so macOS blocks the first launch. Open System Settings › Privacy &amp; Security, scroll down and click Open Anyway next to Warden. You only need to do this once.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is Warden antivirus?</h3>
+          <p>No. It looks for remote-control tools and the common signs of tampering. It doesn’t scan files for malware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final call to action -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <img src="icon.png" width="96" height="96" loading="lazy" decoding="async" alt="">
+      <h2 class="section-title" id="cta-title">Get Warden. It’s free.</h2>
+      <p class="section-lede">Version 1.0.0 · macOS 14 or later · Apple silicon</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases/latest/download/Warden.zip">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3zM5 19h14v2H5z"/></svg>
+          Download for Mac
+        </a>
+        <a class="link-arrow" href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases">Release notes</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <small>© 2026 <a href="https://github.com/PriyanshuGeTRekT">Priyanshu Yadav</a>. Released under the <a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/blob/main/LICENSE">MIT License</a>.</small>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield">GitHub</a></li>
+        <li><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/releases">Releases</a></li>
+        <li><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/issues">Report a bug</a></li>
+        <li><a href="https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield/blob/main/CONTRIBUTING.md">Contribute</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (button) {
+  var source = document.getElementById(button.getAttribute('data-copy'));
+  var status = document.getElementById('copy-status');
+  if (!source || !navigator.clipboard) return;
+  button.hidden = false;
+  button.addEventListener('click', function () {
+    navigator.clipboard.writeText(source.textContent).then(function () {
+      button.textContent = 'Copied';
+      if (status) status.textContent = 'Homebrew commands copied to the clipboard.';
+      setTimeout(function () { button.textContent = 'Copy'; }, 2000);
+    });
+  });
+});
+</script>
+</body>
+</html>

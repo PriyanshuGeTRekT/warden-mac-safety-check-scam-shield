@@ -1,0 +1,83 @@
+name: Bug report
+description: Something in Warden does not work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please check the [FAQ](https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield#faq) and the [known limitations](https://github.com/PriyanshuGeTRekT/warden-mac-safety-check-scam-shield#known-limitations) first, and search the existing issues to see if it has already been reported.
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      description: Apple menu › About This Mac.
+      placeholder: "macOS 27.2"
+    validations:
+      required: true
+
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      description: Apple menu › About This Mac.
+      placeholder: "MacBook Air 13-inch, M3, 2024"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Warden version
+      description: If you built it yourself, give the commit.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: How did you install Warden?
+      options:
+        - Downloaded from GitHub Releases
+        - Homebrew
+        - Built from source
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, step by step?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include any error message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Please remove anything personal (names, file names, phone numbers) first.
+
+  - type: textarea
+    id: selftest
+    attributes:
+      label: Self-test output (optional)
+      description: "Run `/Applications/Warden.app/Contents/MacOS/WardenBar --selftest` in Terminal and paste the output."
+      render: text
